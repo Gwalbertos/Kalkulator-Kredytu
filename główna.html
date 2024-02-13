@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kredytowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <label for="Kapitał">Kwota kredytu</label>
+    <input type="text" id="Kapitał">
+</div>
+
+<div class="form-container">
+    <label for="lata">Lata kredytu</label>
+    <input type="text" id="lata">
+</div>
+
+<div class="form-container">
+    <label for="procent">Oprocentowanie</label>
+    <input type="text" id="procent">
+</div>
+
+<div class="form-container">
+    <label for="typRaty">Wybierz typ raty:</label>
+    <select id="typRaty">
+        <option value="stała">Rata stała</option>
+        <option value="malejąca">Rata malejąca</option>
+    </select>
+</div>
+
+<button class="form-container" type="button" onclick="wczytanie()">Oblicz</button>
+
+<div id="Odset"></div>
+<div id="Kapita"></div>
+
+<div id="tabela-container"></div>
+
+<script src="raty.js" defer></script>
+</body>
+</html>
